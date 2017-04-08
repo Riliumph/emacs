@@ -7,6 +7,7 @@
   '(
     ;; 使用パッケージ一覧
     init-loader
+    highlight-symbol
     )
 )
 
