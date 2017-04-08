@@ -8,6 +8,7 @@
     ;; 使用パッケージ一覧
     init-loader
     company
+    counsel ;; Ivy/Counsel
     highlight-symbol
     )
 )
