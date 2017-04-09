@@ -9,6 +9,9 @@
     init-loader
     company
     counsel ;; Ivy/Counsel
+    dired-toggle
+    dired-details
+    dired-subtree
     highlight-symbol
     )
 )
