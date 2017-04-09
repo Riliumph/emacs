@@ -8,7 +8,19 @@
 (global-set-key (kbd "C-v") 'clipboard-yank)
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
 
-;; Ctrl + Tab / Ctrl + Shift + Tabで分割ウィンドウを移動
+
+;; ウィンドウ移動系キーマップ
+;; vim likeなキーマップ
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <down>")  'windmove-down)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+
+;;;;
+;; ウィンドウ移動・分割関数
+;; ウィンドウが単一のときは縦分割する。
+;; ウインドウが複数のときは指定分移動する
+;; @param 移動量指定
 (defun other-window-or-split (val)
   (interactive)
   (when (one-window-p)
@@ -18,7 +30,7 @@
 
 (global-set-key (kbd "<C-tab>")
 		(lambda () (interactive)
-		  (other-window-or-split 1)))
+		  (other-window-or-split 1)))  ;; 次のウィンドウに移動
 (global-set-key (kbd "<C-S-iso-lefttab>")
 		(lambda () (interactive)
-		  (other-window-or-split -1)))
+		  (other-window-or-split -1))) ;; 前のウィンドウに移動
