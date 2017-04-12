@@ -18,12 +18,10 @@
 (setq highlight-symbol-colors
       '(
         "#af0000" ;; RED
-	"#d75f00" ;; ORANGE (Used searched word)
+        "#d75f00" ;; ORANGE (Used searched word)
         "#00afff" ;; BLUE
         "#5fffff" ;; AQUA
         "#00d700" ;; GREEN
-	"#00ff5f" ;; Lime
-	"#875fd7" ;; PURPLE
-	)
-)
-
+        "#00ff5f" ;; Lime
+        "#875fd7" ;; PURPLE
+        ))

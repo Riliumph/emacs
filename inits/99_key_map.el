@@ -29,8 +29,8 @@
   (other-window val))
 
 (global-set-key (kbd "<C-tab>")
-		(lambda () (interactive)
-		  (other-window-or-split 1)))  ;; 次のウィンドウに移動
+                (lambda () (interactive)
+                  (other-window-or-split 1)))  ;; 次のウィンドウに移動
 (global-set-key (kbd "<C-S-iso-lefttab>")
-		(lambda () (interactive)
-		  (other-window-or-split -1))) ;; 前のウィンドウに移動
+                (lambda () (interactive)
+                  (other-window-or-split -1))) ;; 前のウィンドウに移動

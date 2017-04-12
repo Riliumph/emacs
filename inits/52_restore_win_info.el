@@ -29,7 +29,7 @@
                  ;;"(setq default-frame-alist initial-frame-alist)"
                  ))
         (write-region (point-min) (point-max) file)
-      ))))
+        ))))
 
 (defun load-window-info ()
   (let* ((file restore-info-file))
@@ -38,7 +38,7 @@
 
 ;; Call the function above at C-x C-c.
 (defadvice save-buffers-kill-emacs
-  (before save-frame-size activate)
+    (before save-frame-size activate)
   (save-window-info))
 
 (load-window-info)

@@ -12,10 +12,10 @@
 (setq mouse-wheel-follow-mouse 't ;; マウス下のウィンドウをスクロール
       scroll-margin 3             ;; マージン量
       scroll-conservatively 1     ;; キーボードスクロール量
-      mouse-wheel-scroll-amount '(1　  ;; マウススクロール量
-				  ((shift) . 0.5)　;; 半ページ
-				  ((control) . nil)
-				  ))
+      mouse-wheel-scroll-amount '(1  ;; マウススクロール量
+                                  ((shift) . 0.5)  ;; 半ページ
+                                  ((control) . nil)
+                                  ))
 ;; インデント系
 (setq-default indent-tabs-mode nil ;; インデント無効
               tab-with 2)          ;; タブ幅２

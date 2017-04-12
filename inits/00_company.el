@@ -6,6 +6,6 @@
 (setq company-idle-delay 0.1 ;; 補完表示遅延
       company-minimum-prefix-length 1 ;; 補完開始入力文字数
       company-selection-wrap-around t ;; リスト内の循環移動を有効化
-)
+      )
 ;; キーマップ
 (global-set-key (kbd "C-SPC") 'company-complete)
