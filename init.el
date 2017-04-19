@@ -12,6 +12,7 @@
     dired-toggle
     dired-details
     dired-subtree
+    redo+
     highlight-symbol
     )
 )
