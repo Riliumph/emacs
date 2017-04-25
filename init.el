@@ -9,6 +9,7 @@
     init-loader
     company
     counsel ;; Ivy/Counsel
+    helm
     dired-toggle
     dired-details
     dired-subtree
