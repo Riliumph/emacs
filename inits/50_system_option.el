@@ -18,4 +18,4 @@
                                   ))
 ;; インデント系
 (setq-default indent-tabs-mode nil ;; インデント無効
-              tab-with 2)          ;; タブ幅２
+              tab-width 2)          ;; タブ幅２
