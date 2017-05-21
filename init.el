@@ -8,7 +8,10 @@
     ;; 使用パッケージ一覧
     init-loader
     company
+    irony
+    company-irony
     counsel ;; Ivy/Counsel
+    helm
     dired-toggle
     dired-details
     dired-subtree

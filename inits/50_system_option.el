@@ -17,5 +17,4 @@
                                   ((control) . nil)
                                   ))
 ;; インデント系
-(setq-default indent-tabs-mode nil ;; インデント無効
-              tab-with 2)          ;; タブ幅２
+(setq-default tab-width 4)        ;; タブ幅４
