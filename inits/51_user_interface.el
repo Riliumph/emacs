@@ -31,3 +31,5 @@
 (setq eol-mnemonic-dos "(CRLF)"
       eol-mnemonic-mac "(CR)"
       eol-mnemonic-unix "(LF)")
+
+(which-function-mode 1) ;; 現在の関数名をモードラインに表示
