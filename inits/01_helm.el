@@ -6,11 +6,14 @@
 ;; キーバインド
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-unset-key (kbd "C-x c"))
-;; 上書き
+(global-set-key (kbd "M-SPC") 'helm-mini)
 (global-set-key (kbd "M-x") 'helm-M-x) ; helmのコマンドラインを起動
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 ;; helm-ag用
+(global-set-key (kbd "M-g") 'helm-occur)
 (global-set-key (kbd "C-x C-g") 'helm-ag-this-file)
 (global-set-key (kbd "C-x C-S-g") 'helm-ag)
 ;; helm-swoop用
@@ -33,19 +36,6 @@
       helm-scroll-amount                    8 ; M-<next>/M-<prior>でスクロールする量
       helm-ff-file-name-history-use-recentf t
       helm-echo-input-in-header-line t)
-
-(defun spacemacs//helm-hide-minibuffer-maybe ()
-  "Hide minibuffer in Helm session if we use the header line as input field."
-  (when (with-helm-buffer helm-echo-input-in-header-line)
-    (let ((ov (make-overlay (point-min) (point-max) nil nil t)))
-      (overlay-put ov 'window (selected-window))
-      (overlay-put ov 'face
-                   (let ((bg-color (face-background 'default nil)))
-                     `(:background ,bg-color :foreground ,bg-color)))
-      (setq-local cursor-type nil))))
-
-(add-hook 'helm-minibuffer-set-up-hook
-          'spacemacs//helm-hide-minibuffer-maybe)
 
 ;; ファジー検索機能を有効化
 (setq helm-buffers-fuzzy-matching t
