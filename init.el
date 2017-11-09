@@ -12,6 +12,7 @@
     company-irony
     counsel ;; Ivy/Counsel
     helm
+    helm-swoop
     dired-toggle
     dired-details
     dired-subtree

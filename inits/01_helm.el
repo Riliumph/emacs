@@ -1,5 +1,6 @@
 (require 'helm)
 (require 'helm-config)
+(require 'helm-swoop)
 
 ;; キーバインド
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
@@ -8,6 +9,10 @@
 (global-set-key (kbd "M-x") 'helm-M-x) ; helmのコマンドラインを起動
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-mini)
+;; helm-swoop用
+(global-set-key (kbd "C-s") 'helm-swoop)
+(define-key helm-swoop-map (kbd "C-r") 'helm-previous-line)
+(define-key helm-swoop-map (kbd "C-s") 'helm-next-line)
 ;; ヘルムマップ用
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; デフォルトのTABとC-zを交換
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
