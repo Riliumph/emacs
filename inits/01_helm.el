@@ -1,4 +1,5 @@
 (require 'helm)
+(require 'helm-ag)
 (require 'helm-config)
 (require 'helm-swoop)
 
@@ -9,6 +10,9 @@
 (global-set-key (kbd "M-x") 'helm-M-x) ; helmのコマンドラインを起動
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-mini)
+;; helm-ag用
+(global-set-key (kbd "C-x C-g") 'helm-ag-this-file)
+(global-set-key (kbd "C-x C-S-g") 'helm-ag)
 ;; helm-swoop用
 (global-set-key (kbd "C-s") 'helm-swoop)
 (define-key helm-swoop-map (kbd "C-r") 'helm-previous-line)
