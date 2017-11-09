@@ -1,8 +1,9 @@
 # Compiled
 *.elc
-
 # Packaging
 .cask
-
 # Directoy
 elpa/
+# File
+session.*
+recentf
