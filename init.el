@@ -5,22 +5,30 @@
 (defvar marmalade-repo-url "http://marmalade-repo.org/packages/")
 (defvar repository-list
   '(
-    ;; 使用パッケージ一覧
     init-loader
     company
     irony
     company-irony
     counsel ;; Ivy/Counsel
-    helm
-    helm-swoop
-    helm-ag
     dired-toggle
     dired-details
     dired-subtree
     redo+
     highlight-symbol
     )
-)
+  "使用パッケージ一覧")
+
+(if (>= emacs-major-version 24)
+    (setq repository-list
+          (append repository-list
+                  '(helm
+                    helm-swoop
+                    helm-ag
+                    )))
+  (setq repository-list
+        (append repository-list
+                '(ivy
+                  ))))
 
 ;;; リポジトリ先
 (require 'package)
