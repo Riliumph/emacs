@@ -14,6 +14,7 @@
     dired-details
     dired-subtree
     redo+
+    move-text
     highlight-symbol
     )
   "使用パッケージ一覧")
