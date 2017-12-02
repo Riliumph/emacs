@@ -22,6 +22,3 @@
 ;;  (defvar irony-lang-compile-option-alist)
 ;;  (let ((it (cdr-safe (assq major-mode irony-lang-compile-option-alist))))
 ;;    (when it (append '("-x") (split-string it "\s")))))
-
-(setq-local indent-tabs-mode nil ) ;; インデントにタブ使用を禁止
-(setq-local tab-width 2)           ;; タブ幅２
