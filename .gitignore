@@ -1,8 +1,16 @@
+### Directoy
+elpa/
+auto-save-list/
+
+### File
+session.*
+recentf
+# Backup
+*~
+# Auto-save
+\#*
+.saves-*
 # Compiled
 *.elc
-
 # Packaging
 .cask
-
-# Directoy
-elpa/
