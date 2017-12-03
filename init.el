@@ -16,6 +16,7 @@
     redo+
     move-text
     highlight-symbol
+    rainbow-delimiters
     )
   "使用パッケージ一覧")
 
