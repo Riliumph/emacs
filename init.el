@@ -17,6 +17,7 @@
     move-text
     highlight-symbol
     rainbow-delimiters
+    volatile-highlights
     )
   "使用パッケージ一覧")
 
