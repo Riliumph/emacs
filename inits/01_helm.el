@@ -1,7 +1,5 @@
 (require 'helm)
-(require 'helm-ag)
 (require 'helm-config)
-(require 'helm-swoop)
 
 ;; キーバインド
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
@@ -12,11 +10,13 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-;; helm-ag用
+
+(require 'helm-ag)
 (global-set-key (kbd "M-g") 'helm-occur)
 (global-set-key (kbd "C-x C-g") 'helm-ag-this-file)
 (global-set-key (kbd "C-x C-S-g") 'helm-ag)
-;; helm-swoop用
+
+(require 'helm-swoop)
 (global-set-key (kbd "C-s") 'helm-swoop)
 (define-key helm-swoop-map (kbd "C-r") 'helm-previous-line)
 (define-key helm-swoop-map (kbd "C-s") 'helm-next-line)

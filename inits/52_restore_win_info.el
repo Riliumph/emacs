@@ -2,6 +2,7 @@
 (defconst restore-info-file "~/.local/cache/.emacs_win_info")
 
 (defun save-window-info ()
+  "終了時のウィンドウ情報を保存する"
   (let* ((rlist (frame-parameters (selected-frame)))
          (ilist initial-frame-alist)
          (nCHeight (frame-height))
@@ -32,6 +33,7 @@
         ))))
 
 (defun load-window-info ()
+  "実行時にウィンドウ情報をロードする"
   (let* ((file restore-info-file))
     (if (file-exists-p file)
         (load-library file))))
