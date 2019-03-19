@@ -24,6 +24,10 @@
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; デフォルトのTABとC-zを交換
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; ターミナル内のTABと同じ挙動
+(custom-set-faces
+ '(helm-swoop-target-line-block-face ((t (:inherit helm-swoop-target-line-face))))
+ '(helm-swoop-target-line-face ((t (:inherit isearch))))
+ )
 
 ;; curl実行時の動作
 (when (executable-find "curl")
@@ -41,7 +45,7 @@
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
 
-;; ヘルムバッファのりサイズ機能を有効化
+;; ヘルムバッファのリサイズ機能を有効化
 (setq helm-autoresize-max-height 0
       helm-autoresize-min-height 20)
 (helm-autoresize-mode 1)

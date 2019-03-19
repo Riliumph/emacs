@@ -9,11 +9,13 @@
     (((class color)(background light))
      (:background "black"))))
  '(hl-line ;; 現在行の色
-   ((t (:background "black"))))
+   ((t (:box (:line-width 1 :color "dim gray")))))
  '(region ;; 選択範囲の色
-   ((t (:background "dark blue"))))
+   ((t (:background "medium blue"))))
  '(which-func ;; モードラインの関数名
    ((t (:foreground "light green" :slant italic :weight bold))))
+ '(isearch ;; 検索結果
+   ((t (:background "yellow4" :foreground "black"))))
  )
 
 (set-face-attribute

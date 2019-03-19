@@ -13,11 +13,12 @@
     dired-toggle
     dired-details
     dired-subtree
-    redo+
+;;    redo+
     move-text
     highlight-symbol
     rainbow-delimiters
     volatile-highlights
+    hiwin
     )
   "使用パッケージ一覧")
 

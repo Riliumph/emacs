@@ -13,7 +13,9 @@
 
 ;;;;; 背景色設定
 ;; 自動ハイライト色（紫）
-(set-face-background 'highlight-symbol-face "#af5fd7")
+(custom-set-faces
+  '(highlight-symbol-face ((t (:background "dark magenta"))))
+
 ;; 背景色リスト
 (setq highlight-symbol-colors
       '(
