@@ -13,3 +13,11 @@
       )
 ;; キーマップ
 (global-set-key (kbd "C-SPC") 'company-complete)
+
+(custom-set-faces
+ '(company-scrollbar-bg ((t (:background "gray24"))))
+ '(company-scrollbar-fg ((t (:background "gray10"))))
+ '(company-tooltip ((t (:background "gray18"))))
+ '(company-tooltip-common ((t (:foreground "yellow"))))
+ '(company-tooltip-selection ((t (:background "RoyalBlue4"))))
+)
