@@ -13,7 +13,7 @@
     dired-toggle
     dired-details
     dired-subtree
-    redo+
+;;    redo+
     move-text
     highlight-symbol
     rainbow-delimiters
